@@ -8,4 +8,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 We are designing this site with open source code and an emphasis on re-usability, and we seek opportunities to demonstrate the use of free tools for new builders.
 
-* Navbar styling introduction from [80/20 Coding] (https://www.youtube.com/watch?v=TZuf4E4z4sk) 
+List of helpful resources:
+
+* Navbar styling introduction from [80/20 Coding](https://www.youtube.com/watch?v=TZuf4E4z4sk) 
