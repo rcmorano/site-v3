@@ -1,7 +1,24 @@
 .dropdown-item:hover {
-  background: #2aa !important;
+  background: #599 !important;
 }
 
 .nav-link:hover {
-  color: #2aa !important;
+  color: #599 !important;
+}
+
+.btn {
+  color: #599 !important;
+}
+
+.btn:hover {
+  background: #599 !important;
+  color: #fff !important;
+}
+
+.container {
+  padding: 5rem;
+}
+
+.lead {
+  padding-top: 2rem;
 }

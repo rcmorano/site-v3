@@ -1,8 +1,8 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFlask, faHome, faAt } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFlask, faHome, faAt } from '@fortawesome/free-solid-svg-icons';
 
-export const Navbar = () => {
+function Navbar() {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -14,26 +14,26 @@ export const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#"><FontAwesomeIcon icon={faHome} /> Home</a>
+                            <a className="nav-link ml-5" href="#"><FontAwesomeIcon icon={faHome} /> Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#"><FontAwesomeIcon icon={faAt} />About</a>
+                            <a className="nav-link ml-5" href="#"><FontAwesomeIcon icon={faAt} />About</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Cardano Starter Kits</a>
+                            <a className="nav-link ml-5" href="#">Cardano Starter Kits</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Cardano APIs</a>
+                            <a className="nav-link ml-5" href="#">Cardano APIs</a>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                            <a className="nav-link dropdown-toggle ml-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Learn More
                             </a>
                             <div className="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                            <a className="dropdown-item text-white" href="#">Action</a>
-                            <a className="dropdown-item text-white" href="#">Another action</a>
+                            <a className="dropdown-item text-white" href="#">Principles</a>
                             <div className="dropdown-divider"></div>
-                            <a className="dropdown-item text-white" href="#">Something else here</a>
+                            <a className="dropdown-item text-white" href="#">Learning Philosophy</a>
+                            <a className="dropdown-item text-white" href="#">Local Philosophy</a>
                             </div>
                         </li>
                         
@@ -45,4 +45,4 @@ export const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;
