@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-function HomeBody() {
+function Home() {
     return (
         <div className="container">
             <div className="row">
                 <div className="col"></div>
-                <div className="col-8">
+                <div className="col-10">
                     <h1 className="display-4">Welcome to GimbaLabs!</h1>
                     <p class="lead">Our Mission: Mobilizing everyone in the Cardano community by creating tools and real-world use cases that ignite the public imagination and facilitate adoption.</p>
                     <p class="lead">Our Vision: A world where as many people as possible are empowered to solve problems using the Cardano platform.</p>
@@ -16,4 +16,4 @@ function HomeBody() {
     )
 }
 
-export default HomeBody
+export default Home;

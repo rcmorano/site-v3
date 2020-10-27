@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFlask, faHome, faAt } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
@@ -14,19 +15,19 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                            <a className="nav-link ml-5" href="#"><FontAwesomeIcon icon={faHome} /> Home</a>
+                            <Link className="nav-link ml-3" to="/"><FontAwesomeIcon icon={faHome} /> Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link ml-5" href="#"><FontAwesomeIcon icon={faAt} />About</a>
+                            <Link className="nav-link ml-3" to="/about"><FontAwesomeIcon icon={faAt} />About</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link ml-5" href="#">Cardano Starter Kits</a>
+                            <Link className="nav-link ml-3" to="/cardano-starter-kits">Cardano Starter Kits</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link ml-5" href="#">Cardano APIs</a>
+                            <Link className="nav-link ml-3" to="/open-source-apis">Cardano APIs</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle ml-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a className="nav-link dropdown-toggle ml-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Learn More
                             </a>
                             <div className="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">

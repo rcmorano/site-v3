@@ -8,6 +8,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Reference and link.
 
+## Additional Tools
+
+Styled Components makes it easy to tweak global settings
+Review the rest of package.json
+
 ## Potential Learning Materials
 
 We are designing this site with open source code and an emphasis on re-usability, and we seek opportunities to demonstrate the use of free tools for new builders.
