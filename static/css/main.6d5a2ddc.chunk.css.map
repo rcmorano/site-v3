@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,qBACE,yBACF,CAEA,gBACE,oBACF","file":"main.6d5a2ddc.chunk.css","sourcesContent":[".dropdown-item:hover {\n  background: #2aa !important;\n}\n\n.nav-link:hover {\n  color: #2aa !important;\n}"]}
