@@ -1,3 +1,9 @@
+# @workshopmaybe's notes
+
+Navbar styling introduction here: https://www.youtube.com/watch?v=TZuf4E4z4sk 
+
+# React Readme
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
