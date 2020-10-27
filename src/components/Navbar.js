@@ -38,7 +38,7 @@ export const Navbar = () => {
                         </li>
                         
                     </ul>
-                    <a href="https://cardano.ideascale.com"><button className="btn btn-outline-success my-2 my-sm-0" type="submit">GimbaLabs Proposal on Project Catalyst</button></a>
+                    <a href="https://cardano.ideascale.com/a/dtd/Cardano-Starter-Kits-+-APIs/322195-48088"><button className="btn btn-outline-success my-2 my-sm-0" type="submit">GimbaLabs Proposal on Project Catalyst</button></a>
                 </div>
             </nav>    
         </div>
