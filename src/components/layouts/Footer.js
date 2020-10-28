@@ -36,6 +36,11 @@ function Footer() {
 export default Footer;
 
 const FooterContainer = styled.footer`
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
     .footer-top{
         background: var(--mainDark);
         color: var(--mainBlue);     
