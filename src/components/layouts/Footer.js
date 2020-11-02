@@ -7,27 +7,52 @@ function Footer() {
         <div className="footer-top">
             <div className="container">
                 <div className="row">
-                    <div className="col"></div>
-                    <div className="col-5">
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Collaborators</a></li>
-                            <li><a href="#">Mailing List</a></li>
+                    {/* Column 1 */}
+                    <div className="col-md-3 col-sm-6">
+                        <h4>Column</h4>
+                        <ul className="list-unstyled">
+                            <li><a href="/">Item</a></li>
+                            <li><a href="/">Item</a></li>
+                            <li><a href="/">Item</a></li>
+                            <li><a href="/">Item</a></li>
                         </ul>
                     </div>
-                    <div className="col-5"></div>
-                    <div className="col"></div>
+                    {/* Column 2 */}
+                    <div className="col-md-3 col-sm-6">
+                        <h4>Column</h4>
+                        <ul className="list-unstyled">
+                            <li><a href="/">Item</a></li>
+                            <li><a href="/">Item</a></li>
+                            <li><a href="/">Item</a></li>
+                            <li><a href="/">Item</a></li>
+                        </ul>
+                    </div>
+                    {/* Column 3 */}
+                    <div className="col-md-3 col-sm-6">
+                        <h4>Column</h4>
+                        <ul className="list-unstyled">
+                            <li><a href="/">Item</a></li>
+                            <li><a href="/">Item</a></li>
+                            <li><a href="/">Item</a></li>
+                            <li><a href="/">Item</a></li>
+                        </ul>
+                    </div>
+                    {/* Column 4 */}
+                    <div className="col-md-3 col-sm-6">
+                        <h4>Contact Us</h4>
+                        <ul className="list-unstyled">
+                            <li><a href="/">Item</a></li>
+                            <li><a href="/">Item</a></li>
+                            <li><a href="/">Item</a></li>
+                            <li><a href="/">Item</a></li>
+                        </ul>
+                    </div>
                 </div>           
             </div>
         </div>
 
         <div className="footer-bottom">
-            <div className="row">
-                <div className="col"></div>
-                <div className="col"><p className="text-center">GimbaLabs - Open Source since {new Date().getFullYear()}</p></div>
-                <div className="col"></div>  
-            </div> 
+            <div className="col"><p className="text-xs-center">GimbaLabs - Open Source since {new Date().getFullYear()}</p></div>     
         </div>
     </FooterContainer>
     )
@@ -43,13 +68,15 @@ const FooterContainer = styled.footer`
 
     .footer-top{
         background: var(--mainDark);
-        color: var(--mainBlue);     
+        color: var(--mainBlue);  
+        padding-top: 1rem;   
     }
 
     .footer-bottom{
         background: var(--mainGray);
         color: var(--mainDark);
-        padding-top: 1em;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     ul li a {

@@ -29,3 +29,11 @@
   --mainWhite: #fff;
   --mainBlue: #599;
 }
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
