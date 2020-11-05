@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class APIs extends Component {
+class ApiList extends Component {
     render() {
         return (
             <div>
@@ -10,4 +10,4 @@ class APIs extends Component {
     }
 }
 
-export default APIs
+export default ApiList
