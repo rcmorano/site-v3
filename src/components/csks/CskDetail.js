@@ -7,7 +7,7 @@ import { cskInfo } from '../../data/cskInfo';
 
 function getCSK(record) {
     for(var i = 0; i < cskInfo.length; i++){
-        if(cskInfo[i].id == record){
+        if(cskInfo[i].id === record){
             return cskInfo[i];
         }
     }
@@ -23,9 +23,17 @@ function CskDetail() {
     }
     else {
         return (
-            <div>
-                <h1>Welcome to {csk.id}</h1>
-                <p>{csk.headerTitle}</p>
+                
+            <div className="container">
+                <div className="row">
+                    <div className="col"></div>
+                    <div className="col-10">
+                        <h2 className="display-1">{csk.headerTitle}</h2>
+                        <h3 className="display-4">{csk.headerSubtitle}</h3>
+                        <p class="lead">{csk.headerText}</p>
+                    </div>
+                    <div className="col"></div>
+                </div>
             </div>
         )
     }
