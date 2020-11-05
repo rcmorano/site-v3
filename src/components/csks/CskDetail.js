@@ -18,6 +18,8 @@ function CskDetail() {
     let params = useParams();
     let csk = getCSK(params.id);
 
+    
+
     if (csk == null){
         return "That CSK does not yet exist."
     }
@@ -31,6 +33,7 @@ function CskDetail() {
                         <h2 className="display-1">{csk.headerTitle}</h2>
                         <h3 className="display-4">{csk.headerSubtitle}</h3>
                         <p class="lead">{csk.headerText}</p>
+                        <p class="lead">More coming soon!</p>
                     </div>
                     <div className="col"></div>
                 </div>
