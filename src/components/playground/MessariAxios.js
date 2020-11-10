@@ -3,8 +3,8 @@ import Axios from 'axios';
 
 function MessariAxios() {
 
-    const [name, setName] = useState([]);
-    const [price, setPrice] = useState([]);
+    const [name, setName] = useState("");
+    const [price, setPrice] = useState(0);
 
     useEffect(() => {
         async function fetchData() {
