@@ -15,6 +15,8 @@ import CskDetail from "./components/csks/CskDetail";
 import ApiList from "./components/apis/ApiList";
 // import ApiDetail from "./components/apis/ApiDetail"
 import NotFound from "./components/errors/NotFound";
+// import Playground from "./components/playground/Playground";
+import MessariAxios from "./components/playground/MessariAxios";
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
         <Route exact path="/cardano-starter-kits" component={CskList} />
         <Route path="/cardano-starter-kits/:id" component={CskDetail} />
         <Route path="/open-source-apis" component={ApiList} />
+        <Route path="/playground" component={MessariAxios} />
         {/* <Route path="/open-source-apis/:id" component={ApiDetail} /> */}
         <Route component={NotFound} />
       </Switch>
