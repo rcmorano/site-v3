@@ -31,7 +31,7 @@ function Navbar() {
                             Learn More
                             </a>
                             <div className="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                            <a className="dropdown-item text-white" href="/playground">Playground</a>
+                            <Link className="dropdown-item text-white" to="/playground">Playground</Link>
                             <div className="dropdown-divider"></div>
                             <a className="dropdown-item text-white" href="#">Principles</a>
                             <a className="dropdown-item text-white" href="#">Learning Philosophy</a>
