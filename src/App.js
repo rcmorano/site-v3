@@ -27,7 +27,7 @@ function App() {
         <Route exact path="/cardano-starter-kits" component={CskList} />
         <Route path="/cardano-starter-kits/:id" component={CskDetail} />
         <Route path="/open-source-apis" component={ApiList} />
-        <Route path="/playground" component={Playground} />
+        <Route exact path="/playground" component={Playground} />
         <Route component={NotFound} />
       </Switch>
       <Footer />
