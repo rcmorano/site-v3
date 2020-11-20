@@ -1,13 +1,19 @@
+import './Playground.css'
 import React, { Component } from 'react'
-import MessariAxios from './MessariAxios';
+import Quote from './Quote';
 
 export class Playground extends Component {
     render() {
+
         return (
-            <div>
-                <MessariAxios />
-            </div>
-        )
+            <div className="Playground">
+            <header className="Playground-header">
+              
+              <Quote />
+      
+            </header>
+          </div>
+        )    
     }
 }
 
