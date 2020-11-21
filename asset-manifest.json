@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "https://rcmorano.github.io/site-v3/static/css/main.39f7d88e.chunk.css",
-    "main.js": "https://rcmorano.github.io/site-v3/static/js/main.2f1d979b.chunk.js",
-    "main.js.map": "https://rcmorano.github.io/site-v3/static/js/main.2f1d979b.chunk.js.map",
-    "runtime-main.js": "https://rcmorano.github.io/site-v3/static/js/runtime-main.d3b37e73.js",
-    "runtime-main.js.map": "https://rcmorano.github.io/site-v3/static/js/runtime-main.d3b37e73.js.map",
-    "static/css/2.20aa2d7b.chunk.css": "https://rcmorano.github.io/site-v3/static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.baa75c38.chunk.js": "https://rcmorano.github.io/site-v3/static/js/2.baa75c38.chunk.js",
-    "static/js/2.baa75c38.chunk.js.map": "https://rcmorano.github.io/site-v3/static/js/2.baa75c38.chunk.js.map",
-    "static/js/3.0e108101.chunk.js": "https://rcmorano.github.io/site-v3/static/js/3.0e108101.chunk.js",
-    "static/js/3.0e108101.chunk.js.map": "https://rcmorano.github.io/site-v3/static/js/3.0e108101.chunk.js.map",
-    "index.html": "https://rcmorano.github.io/site-v3/index.html",
-    "static/css/2.20aa2d7b.chunk.css.map": "https://rcmorano.github.io/site-v3/static/css/2.20aa2d7b.chunk.css.map",
-    "static/css/main.39f7d88e.chunk.css.map": "https://rcmorano.github.io/site-v3/static/css/main.39f7d88e.chunk.css.map",
-    "static/js/2.baa75c38.chunk.js.LICENSE.txt": "https://rcmorano.github.io/site-v3/static/js/2.baa75c38.chunk.js.LICENSE.txt"
+    "main.css": "/site-v3/static/css/main.39f7d88e.chunk.css",
+    "main.js": "/site-v3/static/js/main.8dfae973.chunk.js",
+    "main.js.map": "/site-v3/static/js/main.8dfae973.chunk.js.map",
+    "runtime-main.js": "/site-v3/static/js/runtime-main.329e2260.js",
+    "runtime-main.js.map": "/site-v3/static/js/runtime-main.329e2260.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/site-v3/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.f4fe65e0.chunk.js": "/site-v3/static/js/2.f4fe65e0.chunk.js",
+    "static/js/2.f4fe65e0.chunk.js.map": "/site-v3/static/js/2.f4fe65e0.chunk.js.map",
+    "static/js/3.0e108101.chunk.js": "/site-v3/static/js/3.0e108101.chunk.js",
+    "static/js/3.0e108101.chunk.js.map": "/site-v3/static/js/3.0e108101.chunk.js.map",
+    "index.html": "/site-v3/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/site-v3/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.39f7d88e.chunk.css.map": "/site-v3/static/css/main.39f7d88e.chunk.css.map",
+    "static/js/2.f4fe65e0.chunk.js.LICENSE.txt": "/site-v3/static/js/2.f4fe65e0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d3b37e73.js",
+    "static/js/runtime-main.329e2260.js",
     "static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.baa75c38.chunk.js",
+    "static/js/2.f4fe65e0.chunk.js",
     "static/css/main.39f7d88e.chunk.css",
-    "static/js/main.2f1d979b.chunk.js"
+    "static/js/main.8dfae973.chunk.js"
   ]
 }
