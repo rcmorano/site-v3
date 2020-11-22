@@ -25,6 +25,11 @@ class ApiList extends Component {
                             updated={i.updated}
                             gitHubLink={i.gitHubLink}
                             docLink={i.docLink}
+                            markdownEndpoints={i.markdownEndpoints}
+                            markdownExamples={i.markdownExamples}
+                            testnet={i.testnet}
+                            mainnet={i.mainnet}
+                            img={i.img}
                         />
                         ) }
                     </div>

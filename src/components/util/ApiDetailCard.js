@@ -20,12 +20,15 @@ function ContentCard(props) {
                 {props.title}
             </div>
             <div class="card-body">
-                <div className="col">
-                    <img src={process.env.PUBLIC_URL + '/images/' + props.img} class="img-fluid" alt="api cover"/>
-                </div>
                 <div className="h5">{props.subtitle}</div>
                 <p>{props.text}</p>
-                <Link class="btn btn-primary" to={"/open-source-apis/" + props.id} role="button">Learn More</Link>
+                <p class="card-text"><small class="text-muted">Endpoints:</small></p>
+                <ReactMarkdown renderers={renderers} plugins={[gfm]} children={props.markdownEndpoints} />
+                <p class="card-text"><small class="text-muted">Examples:</small></p>
+                <ReactMarkdown renderers={renderers} plugins={[gfm]} children={props.markdownExamples} />
+                <p class="card-text"><small class="text-muted">Reference Links:</small></p>
+                <li><a class="btn btn-primary" target="_blank" href={props.gitHubLink} role="button">GitHub</a></li>
+                <li><a class="btn btn-primary" target="_blank" href={props.docLink} role="button">Documentation</a></li>
                 <p class="card-text"><small class="text-muted">Last update: {props.updated} (versions: testnet-{props.testnet.version}, mainnet-{props.mainnet.version})</small></p>
             </div>
         </div>
