@@ -38,4 +38,14 @@ export const cskInfo = [
     localLink: 'https://workshopmaybe.com/learn/cardano-starter-kits/cardano-starter-kit-002/',
     updated: 'November'
 },
+{
+    id: '003',
+    headerTitle: 'CSK #003',
+    headerSubtitle: 'Where does blockchain fit in the development stack?',
+    headerText: 'This starter kit provides background knowledge for anyone considering learning web development as a step towards building on new ideas.',
+    img: '003cover.png',
+    gitHubLink: 'https://github.com/GimbaLabs/csk-003',
+    youtubeLink: 'https://www.youtube.com/playlist?list=PLfiIgLMz-N6F_697XNFVSyax38_9XH8bV',
+    updated: 'November'
+},
 ]

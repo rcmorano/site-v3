@@ -7,6 +7,7 @@ function Quote() {
     const [lookup, setLookup] = useState("");
     const [name, setName] = useState ("");
     const [price, setPrice] = useState(0);
+    const [loading, setLoading] = useState(true);
     
     const handleSubmit = (e) => {
       e.preventDefault();
@@ -14,22 +15,32 @@ function Quote() {
     }
   
     useEffect(() => {
+      setLoading(true);
       async function fetchData() {
           const request = await Axios.get('https://data.messari.io/api/v1/assets/' + lookup + '/metrics/market-data');
           setName(request.data.data.name);
           setPrice(request.data.data.market_data.price_usd);
+          setTimeout(() => {
+            setLoading(false);
+          }, 300);
           return request;
       }
-  
       fetchData();
     }, [lookup]);
   
     function coinInfo() {
-      if(lookup !== ""){
+      if(loading){
+        return(
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        );
+      }
+      else if(lookup !== ""){
         return(
           <Fragment>
             <p>Name: {name}</p>
-            <p>Price: {price}</p>  
+            <p>Price: ${price}</p>  
           </Fragment>
         );
       }
@@ -44,7 +55,7 @@ function Quote() {
     }
   
     return (
-        <div class="card" style={{width: '25rem'}}>
+        <div class="card mb-5" style={{width: '40rem'}}>
         <div className="card-header">
             Cardano Starter Kit #003
         </div>
