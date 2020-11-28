@@ -13,6 +13,7 @@ import About from "./components/about/About";
 import CskList from "./components/csks/CskList";
 import CskDetail from "./components/csks/CskDetail";
 import ApiList from "./components/apis/ApiList";
+import ApiDetail from "./components/apis/ApiDetail";
 // import ApiDetail from "./components/apis/ApiDetail"
 import NotFound from "./components/errors/NotFound";
 import Playground from "./components/playground/Playground";
@@ -26,7 +27,8 @@ function App() {
         <Route path="/about" component={About} />
         <Route exact path="/cardano-starter-kits" component={CskList} />
         <Route path="/cardano-starter-kits/:id" component={CskDetail} />
-        <Route path="/open-source-apis" component={ApiList} />
+        <Route exact path="/open-source-apis" component={ApiList} />
+        <Route path="/open-source-apis/:id" component={ApiDetail} />
         <Route exact path="/playground" component={Playground} />
         <Route component={NotFound} />
       </Switch>
