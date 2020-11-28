@@ -7,27 +7,25 @@ class CskList extends Component {
         return (
             <div className="container mb-5">
                 <div className="row">
-                    <div className="col"></div>
-                    <div className="col-10">
-                        <h1 className="display-4">Cardano Starter Kits</h1>
-                        <p class="lead">A CSK is your chance to get hands on with Cardano.</p>
-                        <p class="lead">As Goguen and Voltaire continue to roll out, we'll be here exploring what these tools can do.</p>
-                    </div>
-                    <div className="col"></div>
-                </div>    
+                    <h1 className="display-4">Cardano Starter Kits</h1>
+                    <br />
+                    <br />
+                    <p class="lead">A CSK is your chance to get hands on with Cardano.</p>
+                    <p class="lead">As Goguen and Voltaire continue to roll out, we'll be here exploring what these tools can do.</p>
+                </div>
+                   
                 <div className="row mb-5">
-                    <div className="col"></div>
-                    <div className="col-10">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-3">
                         { cskInfo.map(i => 
-                        <ContentCard id={i.id}
-                            title={i.headerTitle} 
-                            subtitle={i.headerSubtitle} 
-                            text={i.headerText} 
-                            updated={i.updated}
-                        />
-                        ) }
+                            <ContentCard id={i.id}
+                                title={i.headerTitle} 
+                                subtitle={i.headerSubtitle} 
+                                text={i.headerText} 
+                                updated={i.updated}
+                            />
+                        ) }    
                     </div>
-                    <div className="col"></div>
+              
                 </div>
             </div>
 
