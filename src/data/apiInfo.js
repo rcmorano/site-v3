@@ -95,20 +95,22 @@ curl -H 'Content-Type: application/json' \\
     mainnet: { version: "2.0.0-beta" },
     testnet: { version: "2.0.0-beta" },
     markdownEndpoints: `
-- [testnet](https://ogmios-api.testnet.`+process.env.REACT_APP_API_DOMAIN+`)
-- [mainnet](https://ogmios-api.mainnet.`+process.env.REACT_APP_API_DOMAIN+`)
+- [testnet (wss)](https://ogmios-api.testnet.`+process.env.REACT_APP_API_DOMAIN+`)
+- [mainnet (wss)](https://ogmios-api.mainnet.`+process.env.REACT_APP_API_DOMAIN+`)
 `,
     markdownExamples: `
 - bash (using [websocat](https://github.com/vi/websocat)):
 ~~~bash
-# query next block
 echo '{ "type": "jsonwsp/request", "version": "1.0", "servicename": "ogmios", "methodname": "RequestNext", "args": {} }' \\
-  | websocat --text -1 - wss://https://ogmios-api.testnet.`+process.env.REACT_APP_API_DOMAIN+`
+  | websocat --text -1 - wss://ogmios-api.testnet.`+process.env.REACT_APP_API_DOMAIN+`
+
+echo '{ "type": "jsonwsp/request", "version": "1.0", "servicename": "ogmios", "methodname": "FindIntersect", "args": { "points": [ "origin" ] } }' \\
+  | websocat --text -1 - wss://ogmios-api.testnet.`+process.env.REACT_APP_API_DOMAIN+`
 ~~~
 `
 },
 {
-    id: "[coming-soon] postgrest-api",
+    id: "postgrest-api",
     headerTitle: "cardano-db-sync/postgrest-api",
     headerSubtitle: "You can use this REST API to perform SQL queries to gather info from the blockchain",
     headerText: "Cardano DB Sync is to follow the Cardano chain and take information from the chain and an internally maintained copy of ledger state. Data is then extracted from the chain and inserted into a PostgreSQL database that can be accessed through a read-only REST API exposed by an instance of the postgREST project.",
@@ -123,10 +125,21 @@ echo '{ "type": "jsonwsp/request", "version": "1.0", "servicename": "ogmios", "m
 - [mainnet](https://postgrest-api.mainnet.`+process.env.REACT_APP_API_DOMAIN+`)
 `,
     markdownExamples: `
+
 - bash:    
 ~~~bash
-# TODO
+# query metadata entry number 15
+curl -s "https://postgrest-api.mainnet.dandelion.link/tx_metadata?id=eq.15"
+# query pool metadata whose URL contains "repsistance" 
+curl -s "https://postgrest-api.mainnet.dandelion.link/pool_meta_data?url=like.*repsistance*"
+# query metadata entries for SPOCRA proposalId "80064c28-1b03-4f1c-abf0-ca8c5a98d5b9"
+curl -s "https://postgrest-api.mainnet.dandelion.link/tx_metadata?json->>ProposalId=eq.80064c28-1b03-4f1c-abf0-ca8c5a98d5b9"
+# query metadata entries for the whole SPOCRA network
+curl -s "https://postgrest-api.mainnet.dandelion.link/tx_metadata?json->>NetworkId=eq.SPOCRA"
 ~~~
+
+[Postgrest documentation](http://postgrest.org/en/latest/api.html) will be handy to explore the whole Cardano network throuh this API.
+
 `
 },
 {
@@ -134,7 +147,7 @@ echo '{ "type": "jsonwsp/request", "version": "1.0", "servicename": "ogmios", "m
     headerTitle: "[coming-soon] cardano-node-socket-over-https",
     headerSubtitle: "You can use this REST API to setup a local socket file and use cardano-cli against it",
     headerText: "cardano-cli is the first class citizen supporting every new blockchain feature, and this endpoint helps to transport a cardano-node's socket to you using a secure HTTPS tunnel.\n Currently access to this API is enabled on demand. Authorization and secure channel is setup with https://github.com/jpillora/chisel and TCP-to-socket termination can be done by using `socat`",
-    img: "showcase-node-socket.png",
+    img: "showcase-comingsoon.jpg",
     gitHubLink: "https://github.com/input-output-hk/cardano-node#cardano-cli",
     docLink: "https://github.com/input-output-hk/cardano-node/blob/master/cardano-cli/README.md",
     updated: "November",
